@@ -73,7 +73,7 @@ const Profile = () => {
       <div className="relative w-28 h-28 mx-auto mb-4">
         {user.profileImgUrl ? (
         <img
-          src={`${BASE_URL}${user.profileImgUrl}`}
+          src={user.profileImgUrl}
           alt="Profile"
           className="w-28 h-28 rounded-full object-cover border mx-auto"
         />

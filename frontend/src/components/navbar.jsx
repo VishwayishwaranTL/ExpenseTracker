@@ -43,7 +43,7 @@ const Navbar = () => {
               <div className="w-20 h-20 rounded-full bg-gray-200 overflow-hidden border border-gray-300 shadow">
                 {user?.profileImgUrl ? (
                   <img
-                    src={`${BASE_URL}${user.profileImgUrl}`}
+                    src={user.profileImgUrl}
                     alt="Profile"
                     className="w-full h-full object-cover"
                     onError={(e) => {
