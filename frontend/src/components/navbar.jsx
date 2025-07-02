@@ -7,16 +7,15 @@ import { API_PATHS } from '../utils/apipath';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { user, setUser, clearUser } = useContext(UserContext); // ✅ Include setUser
+  const { user, updateUser, clearUser } = useContext(UserContext);
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    // ✅ Fetch latest user info when Navbar mounts
     const fetchUser = async () => {
       try {
         const res = await axiosInstance.get(API_PATHS.AUTH.GET_USER_INFO);
-        setUser(res.data);
+        updateUser(res.data);
       } catch (err) {
         console.error('Navbar: Failed to fetch user:', err.message);
       }
@@ -63,7 +62,7 @@ const Navbar = () => {
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = '/default-profile.png'; // ✅ fallback image in public folder
+                      e.target.src = '/default-profile.png';
                     }}
                   />
                 ) : (
