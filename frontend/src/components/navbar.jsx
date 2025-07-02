@@ -9,10 +9,6 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    console.log("Navbar user:", user);
-  }, [user]);
-
   const handleLogout = () => {
     clearUser();
     localStorage.removeItem('token');
