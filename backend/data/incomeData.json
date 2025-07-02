@@ -1,0 +1,110 @@
+[
+  {
+    "source": "Salary",
+    "amount": 32000,
+    "date": "2025-01-01",
+    "description": "Monthly salary"
+  },
+  {
+    "source": "Rental Income",
+    "amount": 6000,
+    "date": "2025-01-03",
+    "description": "Flat rental from tenant"
+  },
+  {
+    "source": "Freelancing",
+    "amount": 8500,
+    "date": "2025-01-15",
+    "description": "Freelance web development"
+  },
+  {
+    "source": "Salary",
+    "amount": 32000,
+    "date": "2025-02-01",
+    "description": "Monthly salary"
+  },
+  {
+    "source": "Rental Income",
+    "amount": 6000,
+    "date": "2025-02-04",
+    "description": "Flat rental from tenant"
+  },
+  {
+    "source": "Bonus",
+    "amount": 5000,
+    "date": "2025-02-20",
+    "description": "Performance bonus"
+  },
+  {
+    "source": "Salary",
+    "amount": 32000,
+    "date": "2025-03-01",
+    "description": "Monthly salary"
+  },
+  {
+    "source": "Rental Income",
+    "amount": 6000,
+    "date": "2025-03-02",
+    "description": "Flat rental from tenant"
+  },
+  {
+    "source": "Gift",
+    "amount": 2000,
+    "date": "2025-03-25",
+    "description": "Birthday gift"
+  },
+  {
+    "source": "Salary",
+    "amount": 32000,
+    "date": "2025-04-01",
+    "description": "Monthly salary"
+  },
+  {
+    "source": "Rental Income",
+    "amount": 6000,
+    "date": "2025-04-03",
+    "description": "Flat rental from tenant"
+  },
+  {
+    "source": "Interest",
+    "amount": 1500,
+    "date": "2025-04-18",
+    "description": "FD interest credited"
+  },
+  {
+    "source": "Salary",
+    "amount": 32000,
+    "date": "2025-05-01",
+    "description": "Monthly salary"
+  },
+  {
+    "source": "Rental Income",
+    "amount": 6000,
+    "date": "2025-05-05",
+    "description": "Flat rental from tenant"
+  },
+  {
+    "source": "Consulting",
+    "amount": 7000,
+    "date": "2025-05-22",
+    "description": "Short-term tech consulting"
+  },
+  {
+    "source": "Salary",
+    "amount": 32000,
+    "date": "2025-06-01",
+    "description": "Monthly salary"
+  },
+  {
+    "source": "Rental Income",
+    "amount": 6000,
+    "date": "2025-06-04",
+    "description": "Flat rental from tenant"
+  },
+  {
+    "source": "Freelancing",
+    "amount": 9000,
+    "date": "2025-06-17",
+    "description": "Mobile app backend development"
+  }
+]
