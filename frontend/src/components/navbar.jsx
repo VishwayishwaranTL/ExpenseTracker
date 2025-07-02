@@ -2,12 +2,27 @@ import React, { useState, useContext, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { UserContext } from '../context/userContext';
 import { Menu, X } from 'lucide-react';
-import { BASE_URL } from '../utils/apipath.js';
+import axiosInstance from '../utils/axiosInstance';
+import { API_PATHS } from '../utils/apipath';
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { user, clearUser } = useContext(UserContext);
+  const { user, setUser, clearUser } = useContext(UserContext); // ✅ Include setUser
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // ✅ Fetch latest user info when Navbar mounts
+    const fetchUser = async () => {
+      try {
+        const res = await axiosInstance.get(API_PATHS.AUTH.GET_USER_INFO);
+        setUser(res.data);
+      } catch (err) {
+        console.error('Navbar: Failed to fetch user:', err.message);
+      }
+    };
+    fetchUser();
+  }, []);
 
   const handleLogout = () => {
     clearUser();
@@ -48,7 +63,7 @@ const Navbar = () => {
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       e.target.onerror = null;
-                      e.target.src = '/default-profile.png';
+                      e.target.src = '/default-profile.png'; // ✅ fallback image in public folder
                     }}
                   />
                 ) : (
@@ -74,6 +89,7 @@ const Navbar = () => {
                   Dashboard
                 </button>
               )}
+
               <button
                 onClick={() => {
                   navigate('/profile');
