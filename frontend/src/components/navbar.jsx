@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { UserContext } from '../context/userContext';
 import { Menu, X } from 'lucide-react';
+import { BASE_URL } from '../utils/apipath'; // ✅ Import base URL
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +44,7 @@ const Navbar = () => {
               <div className="w-20 h-20 rounded-full bg-gray-200 overflow-hidden border border-gray-300 shadow">
                 {user?.profileImgUrl ? (
                   <img
-                    src={user.profileImgUrl}
+                    src={`${BASE_URL}${user.profileImgUrl}`} // ✅ Fixed path
                     alt="Profile"
                     className="w-full h-full object-cover"
                     onError={(e) => {
@@ -74,7 +75,6 @@ const Navbar = () => {
                   Dashboard
                 </button>
               )}
-
               <button
                 onClick={() => {
                   navigate('/profile');
