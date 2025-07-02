@@ -2,13 +2,16 @@ import React, { useState, useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { UserContext } from '../context/userContext';
 import { Menu, X } from 'lucide-react';
-import { BASE_URL } from '../utils/apipath'; // ✅ Import base URL
-
+import { BASE_URL } from '../utils/apipath.js';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { user, clearUser } = useContext(UserContext);
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    console.log("Navbar user:", user);
+  }, [user]);
 
   const handleLogout = () => {
     clearUser();
@@ -44,7 +47,7 @@ const Navbar = () => {
               <div className="w-20 h-20 rounded-full bg-gray-200 overflow-hidden border border-gray-300 shadow">
                 {user?.profileImgUrl ? (
                   <img
-                    src={`${BASE_URL}${user.profileImgUrl}`} // ✅ Fixed path
+                    src={`${BASE_URL}${user.profileImgUrl}`}
                     alt="Profile"
                     className="w-full h-full object-cover"
                     onError={(e) => {
