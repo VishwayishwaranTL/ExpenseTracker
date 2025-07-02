@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axiosInstance from "../../utils/axiosInstance";
-import { API_PATHS,BASE_URL } from "../../utils/apipath";
+import { API_PATHS, BASE_URL } from "../../utils/apipath";
 import { Pencil, Check, X } from "lucide-react";
 
 const Profile = () => {
