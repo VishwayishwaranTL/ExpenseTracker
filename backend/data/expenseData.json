@@ -1,0 +1,93 @@
+[
+  {
+    "category": "Mobile Recharge",
+    "amount": 599,
+    "date": "2025-01-03",
+    "description": "Monthly prepaid plan",
+    "source": "UPI"
+  },
+  {
+    "category": "Rent",
+    "amount": 13000,
+    "date": "2025-01-01",
+    "description": "January apartment rent",
+    "source": "Bank Transfer"
+  },
+  {
+    "category": "Groceries",
+    "amount": 2900,
+    "date": "2025-02-05",
+    "description": "Groceries and vegetables",
+    "source": "Cash"
+  },
+  {
+    "category": "Dining",
+    "amount": 850,
+    "date": "2025-02-24",
+    "description": "Weekend family dinner",
+    "source": "Credit Card"
+  },
+  {
+    "category": "Transportation",
+    "amount": 1400,
+    "date": "2025-03-08",
+    "description": "Cab rides and fuel",
+    "source": "UPI"
+  },
+  {
+    "category": "Utilities",
+    "amount": 2000,
+    "date": "2025-03-03",
+    "description": "Electricity and internet bills",
+    "source": "Credit Card"
+  },
+  {
+    "category": "Healthcare",
+    "amount": 1800,
+    "date": "2025-04-19",
+    "description": "General health checkup",
+    "source": "Cash"
+  },
+  {
+    "category": "Fitness",
+    "amount": 2500,
+    "date": "2025-04-01",
+    "description": "Gym membership fee",
+    "source": "UPI"
+  },
+  {
+    "category": "Subscriptions",
+    "amount": 899,
+    "date": "2025-05-10",
+    "description": "Annual software subscription",
+    "source": "Credit Card"
+  },
+  {
+    "category": "Shopping",
+    "amount": 3200,
+    "date": "2025-05-27",
+    "description": "Casual wear and shoes",
+    "source": "UPI"
+  },
+  {
+    "category": "Groceries",
+    "amount": 2700,
+    "date": "2025-06-09",
+    "description": "Monthly grocery shopping",
+    "source": "Cash"
+  },
+  {
+    "category": "Entertainment",
+    "amount": 1000,
+    "date": "2025-06-18",
+    "description": "Stand-up comedy show",
+    "source": "UPI"
+  },
+  {
+    "category": "Dining",
+    "amount": 600,
+    "date": "2025-06-30",
+    "description": "Dinner at food court",
+    "source": "Credit Card"
+  }
+]

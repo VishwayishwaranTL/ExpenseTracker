@@ -1,0 +1,9 @@
+# For Node.js + React projects
+node_modules/
+.env
+dist/
+build/
+.vscode/
+*.log
+.DS_Store
+uploads/
